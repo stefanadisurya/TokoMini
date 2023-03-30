@@ -16,6 +16,15 @@
 		5ED6F30D29D53DCB00D5B00D /* TokoMiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F30C29D53DCB00D5B00D /* TokoMiniTests.swift */; };
 		5ED6F31729D53DCB00D5B00D /* TokoMiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F31629D53DCB00D5B00D /* TokoMiniUITests.swift */; };
 		5ED6F31929D53DCB00D5B00D /* TokoMiniUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F31829D53DCB00D5B00D /* TokoMiniUITestsLaunchTests.swift */; };
+		5ED6F32C29D53E5D00D5B00D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED6F32B29D53E5D00D5B00D /* WidgetKit.framework */; };
+		5ED6F32E29D53E5D00D5B00D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED6F32D29D53E5D00D5B00D /* SwiftUI.framework */; };
+		5ED6F33129D53E5D00D5B00D /* TokoMiniLockScreenWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F33029D53E5D00D5B00D /* TokoMiniLockScreenWidgetBundle.swift */; };
+		5ED6F33329D53E5D00D5B00D /* TokoMiniLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F33229D53E5D00D5B00D /* TokoMiniLockScreenWidget.swift */; };
+		5ED6F33529D53E5E00D5B00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED6F33429D53E5E00D5B00D /* Assets.xcassets */; };
+		5ED6F33929D53E5E00D5B00D /* TokoMiniLockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5ED6F32929D53E5D00D5B00D /* TokoMiniLockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5ED6F33F29D5461D00D5B00D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F33E29D5461D00D5B00D /* Order.swift */; };
+		5ED6F34129D546A300D5B00D /* TokoMiniLockScreenWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F34029D546A300D5B00D /* TokoMiniLockScreenWidgetEntry.swift */; };
+		5ED6F34329D5471500D5B00D /* TokoMiniLockScreenWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6F34229D5471500D5B00D /* TokoMiniLockScreenWidgetProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +42,28 @@
 			remoteGlobalIDString = 5ED6F2F129D53DC600D5B00D;
 			remoteInfo = TokoMini;
 		};
+		5ED6F33729D53E5E00D5B00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ED6F2EA29D53DC600D5B00D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ED6F32829D53E5D00D5B00D;
+			remoteInfo = TokoMiniLockScreenWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5ED6F33D29D53E5E00D5B00D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5ED6F33929D53E5E00D5B00D /* TokoMiniLockScreenWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5ED6F2F229D53DC600D5B00D /* TokoMini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokoMini.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +79,16 @@
 		5ED6F31229D53DCB00D5B00D /* TokoMiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokoMiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED6F31629D53DCB00D5B00D /* TokoMiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokoMiniUITests.swift; sourceTree = "<group>"; };
 		5ED6F31829D53DCB00D5B00D /* TokoMiniUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokoMiniUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5ED6F32929D53E5D00D5B00D /* TokoMiniLockScreenWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TokoMiniLockScreenWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED6F32B29D53E5D00D5B00D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5ED6F32D29D53E5D00D5B00D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5ED6F33029D53E5D00D5B00D /* TokoMiniLockScreenWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokoMiniLockScreenWidgetBundle.swift; sourceTree = "<group>"; };
+		5ED6F33229D53E5D00D5B00D /* TokoMiniLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokoMiniLockScreenWidget.swift; sourceTree = "<group>"; };
+		5ED6F33429D53E5E00D5B00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ED6F33629D53E5E00D5B00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED6F33E29D5461D00D5B00D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5ED6F34029D546A300D5B00D /* TokoMiniLockScreenWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokoMiniLockScreenWidgetEntry.swift; sourceTree = "<group>"; };
+		5ED6F34229D5471500D5B00D /* TokoMiniLockScreenWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokoMiniLockScreenWidgetProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +113,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5ED6F32629D53E5D00D5B00D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED6F32E29D53E5D00D5B00D /* SwiftUI.framework in Frameworks */,
+				5ED6F32C29D53E5D00D5B00D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +131,8 @@
 				5ED6F2F429D53DC600D5B00D /* TokoMini */,
 				5ED6F30B29D53DCB00D5B00D /* TokoMiniTests */,
 				5ED6F31529D53DCB00D5B00D /* TokoMiniUITests */,
+				5ED6F32F29D53E5D00D5B00D /* TokoMiniLockScreenWidget */,
+				5ED6F32A29D53E5D00D5B00D /* Frameworks */,
 				5ED6F2F329D53DC600D5B00D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +143,7 @@
 				5ED6F2F229D53DC600D5B00D /* TokoMini.app */,
 				5ED6F30829D53DCB00D5B00D /* TokoMiniTests.xctest */,
 				5ED6F31229D53DCB00D5B00D /* TokoMiniUITests.xctest */,
+				5ED6F32929D53E5D00D5B00D /* TokoMiniLockScreenWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +179,29 @@
 			path = TokoMiniUITests;
 			sourceTree = "<group>";
 		};
+		5ED6F32A29D53E5D00D5B00D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ED6F32B29D53E5D00D5B00D /* WidgetKit.framework */,
+				5ED6F32D29D53E5D00D5B00D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5ED6F32F29D53E5D00D5B00D /* TokoMiniLockScreenWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5ED6F33029D53E5D00D5B00D /* TokoMiniLockScreenWidgetBundle.swift */,
+				5ED6F33229D53E5D00D5B00D /* TokoMiniLockScreenWidget.swift */,
+				5ED6F33429D53E5E00D5B00D /* Assets.xcassets */,
+				5ED6F33629D53E5E00D5B00D /* Info.plist */,
+				5ED6F33E29D5461D00D5B00D /* Order.swift */,
+				5ED6F34029D546A300D5B00D /* TokoMiniLockScreenWidgetEntry.swift */,
+				5ED6F34229D5471500D5B00D /* TokoMiniLockScreenWidgetProvider.swift */,
+			);
+			path = TokoMiniLockScreenWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +212,12 @@
 				5ED6F2EE29D53DC600D5B00D /* Sources */,
 				5ED6F2EF29D53DC600D5B00D /* Frameworks */,
 				5ED6F2F029D53DC600D5B00D /* Resources */,
+				5ED6F33D29D53E5E00D5B00D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5ED6F33829D53E5E00D5B00D /* PBXTargetDependency */,
 			);
 			name = TokoMini;
 			productName = TokoMini;
@@ -183,6 +260,23 @@
 			productReference = 5ED6F31229D53DCB00D5B00D /* TokoMiniUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5ED6F32829D53E5D00D5B00D /* TokoMiniLockScreenWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ED6F33A29D53E5E00D5B00D /* Build configuration list for PBXNativeTarget "TokoMiniLockScreenWidgetExtension" */;
+			buildPhases = (
+				5ED6F32529D53E5D00D5B00D /* Sources */,
+				5ED6F32629D53E5D00D5B00D /* Frameworks */,
+				5ED6F32729D53E5D00D5B00D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokoMiniLockScreenWidgetExtension;
+			productName = TokoMiniLockScreenWidgetExtension;
+			productReference = 5ED6F32929D53E5D00D5B00D /* TokoMiniLockScreenWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +298,9 @@
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 5ED6F2F129D53DC600D5B00D;
 					};
+					5ED6F32829D53E5D00D5B00D = {
+						CreatedOnToolsVersion = 14.1;
+					};
 				};
 			};
 			buildConfigurationList = 5ED6F2ED29D53DC600D5B00D /* Build configuration list for PBXProject "TokoMini" */;
@@ -222,6 +319,7 @@
 				5ED6F2F129D53DC600D5B00D /* TokoMini */,
 				5ED6F30729D53DCB00D5B00D /* TokoMiniTests */,
 				5ED6F31129D53DCB00D5B00D /* TokoMiniUITests */,
+				5ED6F32829D53E5D00D5B00D /* TokoMiniLockScreenWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +346,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED6F32729D53E5D00D5B00D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED6F33529D53E5E00D5B00D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +387,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5ED6F32529D53E5D00D5B00D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED6F33F29D5461D00D5B00D /* Order.swift in Sources */,
+				5ED6F33329D53E5D00D5B00D /* TokoMiniLockScreenWidget.swift in Sources */,
+				5ED6F34329D5471500D5B00D /* TokoMiniLockScreenWidgetProvider.swift in Sources */,
+				5ED6F33129D53E5D00D5B00D /* TokoMiniLockScreenWidgetBundle.swift in Sources */,
+				5ED6F34129D546A300D5B00D /* TokoMiniLockScreenWidgetEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +411,11 @@
 			isa = PBXTargetDependency;
 			target = 5ED6F2F129D53DC600D5B00D /* TokoMini */;
 			targetProxy = 5ED6F31329D53DCB00D5B00D /* PBXContainerItemProxy */;
+		};
+		5ED6F33829D53E5E00D5B00D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ED6F32829D53E5D00D5B00D /* TokoMiniLockScreenWidgetExtension */;
+			targetProxy = 5ED6F33729D53E5E00D5B00D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +556,7 @@
 		5ED6F31D29D53DCB00D5B00D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,8 +567,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +585,7 @@
 		5ED6F31E29D53DCB00D5B00D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,8 +596,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,6 +687,60 @@
 			};
 			name = Release;
 		};
+		5ED6F33B29D53E5E00D5B00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM9KG4TB3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokoMiniLockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TokoMiniLockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adisurya.TokoMini.TokoMiniLockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ED6F33C29D53E5E00D5B00D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM9KG4TB3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TokoMiniLockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TokoMiniLockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adisurya.TokoMini.TokoMiniLockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,6 +776,15 @@
 			buildConfigurations = (
 				5ED6F32329D53DCB00D5B00D /* Debug */,
 				5ED6F32429D53DCB00D5B00D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ED6F33A29D53E5E00D5B00D /* Build configuration list for PBXNativeTarget "TokoMiniLockScreenWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ED6F33B29D53E5E00D5B00D /* Debug */,
+				5ED6F33C29D53E5E00D5B00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
