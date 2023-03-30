@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 internal struct TokoMiniLockScreenWidgetView: View {
     internal var entry: TokoMiniLockScreenWidgetEntry
@@ -24,8 +25,6 @@ internal struct TokoMiniLockScreenWidgetView: View {
         .privacySensitive(true)
     }
 }
-
-import WidgetKit
 
 internal struct TokoMiniLockScreenWidget: Widget {
     internal let kind: String = "TokoMiniLockScreenWidget"
